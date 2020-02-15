@@ -176,7 +176,7 @@ export default class ScrollTransition3D extends React.Component {
       marginRight: vertical ? 'auto' : cellSpacing / 2,
       marginTop: vertical ? cellSpacing / 2 : 'auto',
       MozBoxSizing: 'border-box',
-      opacity: this.getOpacityScale(index),
+      filter: `saturation(${this.getOpacityScale(index)})`,
       position: 'absolute',
       top: vertical ? targetPosition : 0,
       transform: `scale(${transformScale})`,
